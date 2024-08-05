@@ -1,0 +1,120 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f5;
+    direction: rtl; /* כתיבה מימין לשמאל */
+    text-align: center;
+
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    background-color: #4CAF50;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 28px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin-inline: auto;
+
+}
+
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    vertical-align: top;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 4px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 50px;
+}
+
+.div_buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.red {
+    background-color: #f44336;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:hover.red {
+    background-color: #EF0307;
+}
+
+/* עיצוב תיבת הטקסט */
+.txtID {
+    width: 40%;
+    height: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* עיצוב תיבת הטקסט בזמן פוקוס */
+.txtID:focus {
+    outline: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.radarTitle {
+    font-size: 36px;
+    color: #EF0307;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}

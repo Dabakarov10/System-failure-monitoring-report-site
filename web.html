@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>דו"ח ניטור תקלות מערכות</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+<h2>דו"ח ניטור תקלות מערכות</h2>
+
+<table id="monitoringReport">
+    <thead>
+    <tr>
+        <th>מספר</th>
+        <th>שם</th>
+        <th>תאריך</th>
+        <th>שעה</th>
+        <th>ממצאי בדיקה</th>
+        <th>זרם שידור</th>
+    </tr>
+    </thead>
+    <tbody id="table-body">
+    <!-- שורות הטבלה שייווצרו דינאמית -->
+    </tbody>
+</table>
+
+<br>
+
+<div id="div_buttons" class="div_buttons">
+    <button id="addRow" onclick="addRow()">הוסף שורה</button>
+    <br><br>
+    <button id="commanderViewBtn" onclick="commanderView()">תצוגת מפקד</button>
+</div>
+<div id="commanderBtnDiv" style="display: none">
+    <br><br>
+    <button id="RegularViewBtn" onclick="RegularView()">תצוגה מבצעית</button>
+    <br><br>
+    <button id="saveDataBtn" onclick="downloadData()">שמור נתונים</button>
+    <br><br>
+    <button id="tableResetBtn" onclick="tableReset()" class="button red">איפוס טבלה</button>
+    <br><br>
+    <label id="labelDisparity" CLASS="red" style="font-size:x-large"></label><br>
+    <label>מגבלת הנתונים בטבלה הינה 45 שורות, לאחר מכן השורות הראשונות ימחקו בהתאמה</label>
+</div>
+<div>
+    <h3 class="radarTitle">תקלות מוכרות</h3>
+    <textarea id="txtID" class="txtID"></textarea>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
